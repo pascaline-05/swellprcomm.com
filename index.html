@@ -1,0 +1,75 @@
+swellpr-site/
+│
+├── index.html         ← homepage
+├── about.html         ← other main pages
+├── services.html
+├── contact.html
+│
+├── assets/
+│   ├── images/
+│   ├── icons/
+│   └── fonts/
+│
+├── css/
+│   └── global.css      ← brand styles here
+├── js/
+│   └── scripts.js      ← carousel, interactions
+├── README.md
+├── CNAME               ← (if you're using a custom domain)
+└── .gitignore
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #F8F6F2;
+  color: #1A1A1A;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #C86B48;
+}
+
+a {
+  color: #2A2D6F;
+  text-decoration: none;
+}
+
+button {
+  background-color: #C86B48;
+  border-radius: 8px;
+  color: #fff;
+  padding: 0.75em 1.25em;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #da7e5f;
+}<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swell PR</title>
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">What We Do</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>We help brands say the right thing—on purpose.</h1>
+      <p>Strategic messaging, voice & campaigns that make clarity your edge.</p>
+      <button>Let’s Talk</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Swell PR & Communications. Powered by story.</p>
+  </footer>
+</body>
+</html>
