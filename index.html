@@ -1,19 +1,36 @@
-swellpr-site/
-│
-├── index.html         ← homepage
-├── about.html         ← other main pages
-├── services.html
-├── contact.html
-│
-├── assets/
-│   ├── images/
-│   ├── icons/
-│   └── fonts/
-│
-├── css/
-│   └── global.css      ← brand styles here
-├── js/
-│   └── scripts.js      ← carousel, interactions
-├── README.md
-├── CNAME               ← (if you're using a custom domain)
-└── .gitignore
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swell PR & Communications</title>
+    <link rel="stylesheet" href="css/global.css">
+    <style>
+        body { font-family: Arial, sans-serif; background: #f8f9fa; color: #1a365d; margin: 0; }
+        .container { max-width: 700px; margin: 60px auto; background: #fff; padding: 40px 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.07); text-align: center; }
+        h1 { color: #1a365d; }
+        h2 { color: #2c5282; font-weight: 400; }
+        nav { margin: 2em 0; }
+        nav a { color: #3182ce; text-decoration: none; margin: 0 12px; font-weight: 500; }
+        nav a:hover { text-decoration: underline; }
+        .cta { display: inline-block; margin-top: 2em; padding: 0.75em 2em; background: #3182ce; color: #fff; border-radius: 25px; font-size: 1.1em; text-decoration: none; transition: background 0.2s; }
+        .cta:hover { background: #1a365d; }
+        @media(max-width:600px){ .container { padding: 20px 10px; } h1 { font-size: 1.8em; } h2 { font-size: 1.2em; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Swell PR & Communications</h1>
+        <h2>Building Brands. Managing Stories. Connecting Audiences.</h2>
+        <nav>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <p>
+            Welcome to Swell PR & Communications. We help businesses and organizations shape their brand narrative, engage their audience, and grow their reputation through strategic public relations and effective communications.
+        </p>
+        <a class="cta" href="contact.html">Let’s Work Together</a>
+    </div>
+</body>
+</html>
