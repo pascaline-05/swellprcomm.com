@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Swell</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <style>
-    /* Reset and layout */
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%;
       font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      flex-direction: column;
       background-color: #fdfdfd;
+      color: #333;
     }
 
-    /* Sticky nav bar */
     nav {
       position: sticky;
       top: 0;
@@ -41,16 +37,44 @@
       color: #0078D4;
     }
 
-    /* Hero section */
     .hero {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       padding: 4rem 2rem;
+      text-align: center;
+      background-color: #f4f4f4;
     }
 
-    /* Footer */
+    .hero h1 {
+      font-size: 2.5rem;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.2;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    ul li {
+      margin-bottom: 1rem;
+    }
+
     footer {
       background-color: #222;
       color: #fff;
@@ -60,13 +84,18 @@
 
     .footer-links {
       margin-bottom: 1rem;
-      font-size: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
     }
 
     .footer-links a {
       color: #ccc;
       text-decoration: none;
-      margin: 0 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
       transition: color 0.3s ease;
     }
 
@@ -74,9 +103,15 @@
       color: #fff;
     }
 
-    .footer-icons {
-      margin-top: 1rem;
-      font-size: 1.2rem;
+    .footer-links svg {
+      width: 20px;
+      height: 20px;
+      fill: #ccc;
+      transition: fill 0.3s ease;
+    }
+
+    .footer-links a:hover svg {
+      fill: #fff;
     }
 
     .footer-cta {
@@ -90,8 +125,13 @@
         gap: 1rem;
       }
 
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
       .footer-links {
-        font-size: 0.9rem;
+        flex-direction: column;
+        gap: 1rem;
       }
     }
   </style>
@@ -107,18 +147,41 @@
   </nav>
 
   <section class="hero">
-    <!-- Empty hero for now — can add background or animation later -->
+    <h1>We help brave brands say the right thing—on purpose.</h1>
+  </section>
+
+  <section>
+    <h2>About Swell</h2>
+    <p>Swell is a communications studio that helps founders, creatives, and teams in transition find the words that move their work forward. We believe clarity is a strategic advantage. We build messaging frameworks that resonate and stick.</p>
+  </section>
+
+  <section>
+    <h2>What We Value</h2>
+    <ul>
+      <li><strong>Editorial thinking:</strong> We approach brand voice like editors—asking better questions, cutting the fluff, and shaping stories that feel true.</li>
+      <li><strong>Quiet boldness:</strong> We help clients speak with precision, confidence, and warmth—without shouting or forcing the message.</li>
+      <li><strong>Earned attention:</strong> We build trust through thoughtful strategy, consistent voice, and meaningful visibility.</li>
+    </ul>
   </section>
 
   <footer>
     <div class="footer-links">
-      <a href="#">Privacy</a> |
-      <a href="#">Facebook</a> |
-      <a href="#">LinkedIn</a> |
-      <a href="#">Blog</a>
-    </div>
-    <div class="footer-icons">
-      📄 🔗 💬 🧠
+      <a href="#">
+        <svg viewBox="0 0 24 24"><path d="M6 2h12a2 2 0 012 2v16a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2zm0 2v16h12V4H6zm2 2h8v2H8V6zm0 4h8v2H8v-2zm0 4h5v2H8v-2z"/></svg>
+        Privacy
+      </a>
+      <a href="#">
+        <svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54V9.41c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.89h-2.34v6.99C18.34 21.12 22 16.99 22 12z"/></svg>
+        Facebook
+      </a>
+      <a href="#">
+        <svg viewBox="0 0 24 24"><path d="M4 3C2.9 3 2 3.9 2 5v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H4zm4.75 14H6.5v-6h2.25v6zm-1.13-6.75c-.72 0-1.32-.6-1.32-1.33 0-.73.6-1.32 1.32-1.32.73 0 1.33.59 1.33 1.32 0 .73-.6 1.33-1.33 1.33zM18 17h-2.25v-3c0-.72-.28-1.25-.98-1.25-.53 0-.84.36-.98.71-.05.13-.06.31-.06.49v3.05H11.5s.03-4.95 0-5.46h2.25v.77c.3-.46.84-1.12 2.05-1.12 1.5 0 2.7.98 2.7 3.09V17z"/></svg>
+        LinkedIn
+      </a>
+      <a href="#">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16v2H4V4zm0 4h10v2H4V8zm0 4h16v2H4v-2zm0 4h10v2H4v-2z"/></svg>
+        Blog
+      </a>
     </div>
     <div>&copy; 2025 Swell Communications</div>
     <div class="footer-cta">Ready to make bold moves? <a href="#">Contact Us</a></div>
