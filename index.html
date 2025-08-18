@@ -3,188 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Swell</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fdfdfd;
-      color: #333;
-    }
-
-    nav {
-      position: sticky;
-      top: 0;
-      background-color: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-      z-index: 1000;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #0078D4;
-    }
-
-    .hero {
-      padding: 4rem 2rem;
-      text-align: center;
-      background-color: #f4f4f4;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      max-width: 800px;
-      margin: 0 auto;
-      line-height: 1.2;
-    }
-
-    section {
-      padding: 3rem 2rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    section h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-
-    section p {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 1rem;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    ul li {
-      margin-bottom: 1rem;
-    }
-
-    footer {
-      background-color: #222;
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .footer-links {
-      margin-bottom: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-    }
-
-    .footer-links a {
-      color: #ccc;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      transition: color 0.3s ease;
-    }
-
-    .footer-links a:hover {
-      color: #fff;
-    }
-
-    .footer-links svg {
-      width: 20px;
-      height: 20px;
-      fill: #ccc;
-      transition: fill 0.3s ease;
-    }
-
-    .footer-links a:hover svg {
-      fill: #fff;
-    }
-
-    .footer-cta {
-      font-weight: bold;
-      margin-top: 1rem;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        gap: 1rem;
-      }
-
-      .hero h1 {
-        font-size: 1.8rem;
-      }
-
-      .footer-links {
-        flex-direction: column;
-        gap: 1rem;
-      }
-    }
-  </style>
+  <title>Pascaline's Brand</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">What We Do</a>
-    <a href="#">Blog</a>
-    <a href="#">Contact</a>
-  </nav>
-
+  <!-- Hero Section -->
   <section class="hero">
-    <h1>We help brave brands say the right thing—on purpose.</h1>
+    <h1>Pascaline's Brand</h1>
+    <p>Designing with purpose. Creating with heart.</p>
   </section>
 
-  <section>
-    <h2>About Swell</h2>
-    <p>Swell is a communications studio that helps founders, creatives, and teams in transition find the words that move their work forward. We believe clarity is a strategic advantage. We build messaging frameworks that resonate and stick.</p>
-  </section>
+  <!-- Body Content -->
+  <section class="content">
+    <h2>Welcome</h2>
+    <p>
+      We’re a creative studio that blends strategy, design, and storytelling to help brands stand out and connect deeply. Whether you're building something new or refining what already exists, we’re here to bring clarity and creativity to every step.
+    </p>
 
-  <section>
-    <h2>What We Value</h2>
+    <h2>Explore</h2>
     <ul>
-      <li><strong>Editorial thinking:</strong> We approach brand voice like editors—asking better questions, cutting the fluff, and shaping stories that feel true.</li>
-      <li><strong>Quiet boldness:</strong> We help clients speak with precision, confidence, and warmth—without shouting or forcing the message.</li>
-      <li><strong>Earned attention:</strong> We build trust through thoughtful strategy, consistent voice, and meaningful visibility.</li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">What We Do</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <div class="footer-links">
-      <a href="#">
-        <svg viewBox="0 0 24 24"><path d="M6 2h12a2 2 0 012 2v16a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2zm0 2v16h12V4H6zm2 2h8v2H8V6zm0 4h8v2H8v-2zm0 4h5v2H8v-2z"/></svg>
-        Privacy
-      </a>
-      <a href="#">
-        <svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54V9.41c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.89h-2.34v6.99C18.34 21.12 22 16.99 22 12z"/></svg>
-        Facebook
-      </a>
-      <a href="#">
-        <svg viewBox="0 0 24 24"><path d="M4 3C2.9 3 2 3.9 2 5v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H4zm4.75 14H6.5v-6h2.25v6zm-1.13-6.75c-.72 0-1.32-.6-1.32-1.33 0-.73.6-1.32 1.32-1.32.73 0 1.33.59 1.33 1.32 0 .73-.6 1.33-1.33 1.33zM18 17h-2.25v-3c0-.72-.28-1.25-.98-1.25-.53 0-.84.36-.98.71-.05.13-.06.31-.06.49v3.05H11.5s.03-4.95 0-5.46h2.25v.77c.3-.46.84-1.12 2.05-1.12 1.5 0 2.7.98 2.7 3.09V17z"/></svg>
-        LinkedIn
-      </a>
-      <a href="#">
-        <svg viewBox="0 0 24 24"><path d="M4 4h16v2H4V4zm0 4h10v2H4V8zm0 4h16v2H4v-2zm0 4h10v2H4v-2z"/></svg>
-        Blog
-      </a>
+    <p>&copy; 2025 Pascaline's Brand. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><svg><!-- Facebook icon --></svg></a>
+      <a href="#"><svg><!-- Instagram icon --></svg></a>
+      <a href="#"><svg><!-- LinkedIn icon --></svg></a>
     </div>
-    <div>&copy; 2025 Swell Communications</div>
-    <div class="footer-cta">Ready to make bold moves? <a href="#">Contact Us</a></div>
   </footer>
 
 </body>
