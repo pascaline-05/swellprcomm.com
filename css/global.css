@@ -139,3 +139,27 @@ a.email {
   h2 { font-size: 1.2em; }
   nav a { font-size: 0.99em; }
 }
+
+footer {
+  background-color: #f5f0ec;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 3rem;
+}
+
+.footer-links {
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: 600;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
