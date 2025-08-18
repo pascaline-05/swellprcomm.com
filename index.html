@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Swell</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%;
       font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      flex-direction: column;
       background-color: #fdfdfd;
+      color: #333;
     }
 
     nav {
@@ -40,20 +38,41 @@
     }
 
     .hero {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
       padding: 4rem 2rem;
+      text-align: center;
       background-color: #f4f4f4;
     }
 
     .hero h1 {
       font-size: 2.5rem;
       max-width: 800px;
+      margin: 0 auto;
       line-height: 1.2;
-      color: #333;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    ul li {
+      margin-bottom: 1rem;
     }
 
     footer {
@@ -68,6 +87,7 @@
       display: flex;
       justify-content: center;
       gap: 1.5rem;
+      flex-wrap: wrap;
     }
 
     .footer-links a {
@@ -105,13 +125,13 @@
         gap: 1rem;
       }
 
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
       .footer-links {
         flex-direction: column;
         gap: 1rem;
-      }
-
-      .hero h1 {
-        font-size: 1.8rem;
       }
     }
   </style>
@@ -128,6 +148,20 @@
 
   <section class="hero">
     <h1>We help brave brands say the right thing—on purpose.</h1>
+  </section>
+
+  <section>
+    <h2>About Swell</h2>
+    <p>Swell is a communications studio that helps founders, creatives, and teams in transition find the words that move their work forward. We believe clarity is a strategic advantage. We build messaging frameworks that resonate and stick.</p>
+  </section>
+
+  <section>
+    <h2>What We Value</h2>
+    <ul>
+      <li><strong>Editorial thinking:</strong> We approach brand voice like editors—asking better questions, cutting the fluff, and shaping stories that feel true.</li>
+      <li><strong>Quiet boldness:</strong> We help clients speak with precision, confidence, and warmth—without shouting or forcing the message.</li>
+      <li><strong>Earned attention:</strong> We build trust through thoughtful strategy, consistent voice, and meaningful visibility.</li>
+    </ul>
   </section>
 
   <footer>
