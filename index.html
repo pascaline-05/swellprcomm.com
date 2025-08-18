@@ -14,31 +14,40 @@
       font-family: 'Segoe UI', sans-serif;
       display: flex;
       flex-direction: column;
+      background-color: #fdfdfd;
     }
 
-    /* Hero section with nav only */
-    .hero {
-      flex: 1;
+    /* Sticky nav bar */
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #fff;
+      padding: 1rem 2rem;
       display: flex;
       justify-content: center;
-      align-items: center;
-      background-color: #f4f4f4;
-    }
-
-    nav {
-      display: flex;
       gap: 2rem;
-      font-size: 1.2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      z-index: 1000;
     }
 
     nav a {
       text-decoration: none;
       color: #333;
       font-weight: 500;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
       color: #0078D4;
+    }
+
+    /* Hero section */
+    .hero {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 2rem;
     }
 
     /* Footer */
@@ -49,18 +58,25 @@
       text-align: center;
     }
 
-    footer a {
+    .footer-links {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    .footer-links a {
       color: #ccc;
       text-decoration: none;
       margin: 0 0.5rem;
+      transition: color 0.3s ease;
     }
 
-    footer a:hover {
+    .footer-links a:hover {
       color: #fff;
     }
 
-    .footer-links {
-      margin-bottom: 1rem;
+    .footer-icons {
+      margin-top: 1rem;
+      font-size: 1.2rem;
     }
 
     .footer-cta {
@@ -73,19 +89,25 @@
         flex-direction: column;
         gap: 1rem;
       }
+
+      .footer-links {
+        font-size: 0.9rem;
+      }
     }
   </style>
 </head>
 <body>
 
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">What We Do</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </nav>
+
   <section class="hero">
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">What We Do</a>
-      <a href="#">Blog</a>
-      <a href="#">Contact</a>
-    </nav>
+    <!-- Empty hero for now — can add background or animation later -->
   </section>
 
   <footer>
@@ -94,6 +116,9 @@
       <a href="#">Facebook</a> |
       <a href="#">LinkedIn</a> |
       <a href="#">Blog</a>
+    </div>
+    <div class="footer-icons">
+      📄 🔗 💬 🧠
     </div>
     <div>&copy; 2025 Swell Communications</div>
     <div class="footer-cta">Ready to make bold moves? <a href="#">Contact Us</a></div>
