@@ -1,39 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pascaline's Brand</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f3f0;
+  color: #333;
+}
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Pascaline's Brand</h1>
-    <p>Designing with purpose. Creating with heart.</p>
-  </section>
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 1rem;
+  background-color: #e0dcd5;
+}
 
-  <!-- Body Content -->
-  <section class="content">
-    <h2>Welcome</h2>
-    <p>
-      We’re a creative studio that blends strategy, design, and storytelling to help brands stand out and connect deeply. Whether you're building something new or refining what already exists, we’re here to bring clarity and creativity to every step.
-    </p>
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
 
-    <h2>Explore</h2>
-    <ul>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="services.html">What We Do</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </section>
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #d6cfc7;
+}
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Pascaline's Brand. All rights reserved.</p>
-  </footer>
+.logo {
+  width: 120px;
+  margin-bottom: 1rem;
+}
 
-</body>
-</html>
+footer {
+  background-color: #eae6e1;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+.social-icons img {
+  width: 24px;
+  margin: 0 0.5rem;
+}
