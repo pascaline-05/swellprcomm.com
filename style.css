@@ -12,21 +12,22 @@ nav ul {
   list-style: none;
   padding: 1rem;
   background-color: #e0dcd5;
+  margin: 0;
 }
 
 nav a {
   text-decoration: none;
   color: #333;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .hero {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 4rem 2rem;
   background-color: #d6cfc7;
-  flex-wrap: wrap;
 }
 
 .hero-left {
@@ -41,8 +42,8 @@ nav a {
 
 .company-name {
   font-size: 2rem;
-  margin-top: 1rem;
-  color: #333;
+  font-weight: 700;
+  margin-top: 0;
 }
 
 .hero-center {
@@ -61,6 +62,7 @@ nav a {
 .tagline {
   font-size: 1.5rem;
   font-weight: 500;
+  margin: 0;
 }
 
 footer {
@@ -74,11 +76,13 @@ footer {
   justify-content: center;
   gap: 1.5rem;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .footer-links a {
   color: #333;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .social-icons img {
