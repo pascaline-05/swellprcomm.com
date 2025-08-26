@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,10 +21,10 @@
     </ul>
   </nav>
 
+
   <!-- Hero Section -->
 
   <section class="hero">
-
     <div class="hero-left">
       <img src="assets/logo-transparent.png" alt="Swell PR Logo" class="logo" />
       <h1 class="company-name">Swell PR & Communications</h1>
@@ -35,135 +33,28 @@
       <img src="assets/hero-image.jpg" alt="Creative branding visual" class="hero-image" />
       <p class="tagline">We help brave brands say the right thing — on purpose.</p>
     </div>
-
   </section>
-
-  <!-- Blog Section -->
-  <section class="blog">
-      <h2>Our Latest Thinking</h2>
-      <div id="blog-posts-container" class="blog-container">
-          <!-- Blog posts will be dynamically inserted here -->
-          <p class="loading-message">Loading posts...</p>
-      </div>
-  </section>
-
-  <!-- Call to Action Section -->
-  <section class="cta">
-      <h2>Ready to make some noise?</h2>
-      <p>Let's talk about how Swell can help your brand ride the next wave.</p>
-      <a href="contact.html" class="cta-button">Schedule a Consultation</a>
-  </section>
-
 
   <!-- Footer -->
 
   <footer>
-
     <div class="footer-links">
-
       <a href="contact.html">Contact</a>
-
       <a href="blog.html">Our Blog</a>
-
       <a href="privacy.html">Privacy Policy</a>
-
       <a href="#">Terms & Conditions</a>
-
     </div>
 
     <div class="social-icons">
-
       <a href="#"><img src="assets/facebook.svg" alt="Facebook" /></a>
-
       <a href="#"><img src="assets/linkedin.svg" alt="LinkedIn" /></a>
-
       <a href="#"><img src="assets/instagram.svg" alt="Instagram" /></a>
-
       <a href="#"><img src="assets/medium.svg" alt="Medium" /></a>
-
     </div>
 
     <p>&copy; 2025 Swell PR & Communications</p>
 
   </footer>
-
-  <script>
-    // This script dynamically fetches blog posts and renders them on the page.
-    document.addEventListener('DOMContentLoaded', () => {
-      const postsContainer = document.getElementById('blog-posts-container');
-      
-      // --- Replace this URL with your actual blog API endpoint ---
-      const blogApiUrl = 'https://jsonplaceholder.typicode.com/posts'; // Example API
-
-      // --- Mock data for demonstration if the API fails or for offline development ---
-      const mockPosts = [
-        { id: 1, title: 'The Top 5 PR Trends to Watch in 2025', body: 'Discover the shifts in the media landscape and how your brand can stay ahead of the curve.', category: 'Trends', imageUrl: 'https://placehold.co/600x400/A5B4FC/FFFFFF?text=PR+Trends' },
-        { id: 2, title: 'Why Your Brand\'s Story is Its Most Valuable Asset', body: 'A compelling narrative is more than just marketing—it\'s the core of your connection with customers.', category: 'Storytelling', imageUrl: 'https://placehold.co/600x400/818CF8/FFFFFF?text=Storytelling' },
-        { id: 3, title: 'Navigating a Crisis: A Proactive Approach', body: 'The best time to plan for a crisis is before it happens. Here\'s how to prepare your communications strategy.', category: 'Crisis Comms', imageUrl: 'https://placehold.co/600x400/6366F1/FFFFFF?text=Crisis+Comms' }
-      ];
-
-      // Function to create the HTML for a single blog post card
-      const createPostCard = (post) => {
-        // Create elements manually to avoid innerHTML for better security and performance
-        const postLink = document.createElement('a');
-        postLink.href = '#'; // Or link to the actual post: `/blog/${post.id}`
-        postLink.className = 'blog-card';
-
-        const postImage = document.createElement('img');
-        postImage.src = post.imageUrl;
-        postImage.alt = `Blog post image for ${post.title}`;
-        postImage.onerror = function() { this.onerror=null; this.src='https://placehold.co/600x400/CCCCCC/FFFFFF?text=Image'; };
-
-        const postContent = document.createElement('div');
-        postContent.className = 'blog-card-content';
-
-        const postCategory = document.createElement('p');
-        postCategory.className = 'blog-category';
-        postCategory.textContent = post.category;
-
-        const postTitle = document.createElement('h3');
-        postTitle.textContent = post.title;
-
-        const postBody = document.createElement('p');
-        postBody.textContent = post.body;
-
-        postContent.appendChild(postCategory);
-        postContent.appendChild(postTitle);
-        postContent.appendChild(postBody);
-        
-        postLink.appendChild(postImage);
-        postLink.appendChild(postContent);
-
-        return postLink;
-      };
-
-      // Function to fetch and render posts
-      const loadBlogPosts = async () => {
-        try {
-          // Using mock data for this example.
-          // In a real application, you would fetch from your API.
-          const posts = mockPosts;
-
-          // Clear the "Loading..." message
-          postsContainer.innerHTML = '';
-
-          // We only want to show 3 posts
-          posts.slice(0, 3).forEach(post => {
-            const postCard = createPostCard(post);
-            postsContainer.appendChild(postCard);
-          });
-
-        } catch (error) {
-          console.error('Failed to load blog posts:', error);
-          // Display an error message to the user
-          postsContainer.innerHTML = '<p class="error-message">Could not load blog posts. Please try again later.</p>';
-        }
-      };
-
-      // Call the function to load the posts
-      loadBlogPosts();
-    });
-  </script>
 
 </body>
 </html>
