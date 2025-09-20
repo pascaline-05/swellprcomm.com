@@ -36,7 +36,7 @@ const About = () => {
 
   const team = [
     {
-      name: 'Sarah Mitchell',
+      name: 'Pascaline Khoza',
       role: 'Founder & CEO',
       bio: 'Former Fortune 500 communications director with 15+ years of experience.',
       image: 'Professional woman in business attire with confident smile'

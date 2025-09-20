@@ -18,7 +18,7 @@ const Blog = () => {
   const featuredPost = {
     title: 'The Future of Brand Storytelling: Why Authenticity Beats Perfection',
     excerpt: 'In an era of information overload, brands that dare to be vulnerable and authentic are the ones that truly connect with their audiences. Here\'s how to craft stories that resonate.',
-    author: 'Sarah Mitchell',
+    author: 'Pascaline Khoza',
     date: '2024-01-15',
     category: 'Strategic Storytelling',
     readTime: '8 min read',
@@ -47,7 +47,7 @@ const Blog = () => {
     {
       title: 'From Startup to Thought Leader: A 12-Month Positioning Strategy',
       excerpt: 'A comprehensive guide to establishing thought leadership in your industry, with real examples and actionable steps.',
-      author: 'Sarah Mitchell',
+      author: 'Pascaline Khoza',
       date: '2024-01-08',
       category: 'Thought Leadership',
       readTime: '12 min read',
@@ -74,7 +74,7 @@ const Blog = () => {
     {
       title: 'The Art of the Press Release: Making News in a Noisy World',
       excerpt: 'How to craft press releases that journalists actually want to read and share, with templates and examples.',
-      author: 'Sarah Mitchell',
+      author: 'Pascaline Khoza',
       date: '2024-01-01',
       category: 'Media & Influence',
       readTime: '5 min read',
