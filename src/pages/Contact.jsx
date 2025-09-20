@@ -61,20 +61,14 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      details: 'hello@swellpr.com',
+      details: 'hello@swellprcomm.com',
       description: 'Send us an email anytime'
     },
     {
       icon: Phone,
       title: 'Call Us',
-      details: '+1 (555) 123-4567',
+      details: '+27 (67) 964-7881',
       description: 'Mon-Fri from 9am to 6pm EST'
-    },
-    {
-      icon: MapPin,
-      title: 'Visit Us',
-      details: 'New York, NY',
-      description: 'Schedule an in-person meeting'
     },
     {
       icon: Clock,
@@ -246,7 +240,7 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={handleInputChange}
                       className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
-                      placeholder="+1 (555) 123-4567"
+                      placeholder="+27 (67) 964-7881"
                     />
                   </div>
                 </div>
@@ -406,7 +400,7 @@ const Contact = () => {
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
                     <Phone className="h-5 w-5 text-blue-600" />
-                    <span className="font-semibold text-slate-800">+1 (555) 123-4567</span>
+                    <span className="font-semibold text-slate-800">+27 (67) 964-7881</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Clock className="h-5 w-5 text-blue-600" />

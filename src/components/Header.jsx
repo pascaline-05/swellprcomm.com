@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import logo from '../../assets/logo-transparent.png';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Menu, X, Waves } from 'lucide-react';
@@ -37,12 +38,14 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="relative">
-              <Waves className="h-8 w-8 text-blue-600 group-hover:text-coral transition-colors duration-300" />
-              <div className="absolute inset-0 bg-blue-600/20 rounded-full blur-lg group-hover:bg-orange-500/20 transition-all duration-300"></div>
-            </div>
+            <img
+              src={logo}
+              alt=""
+              className="h-10 w-auto drop-shadow-lg"
+              style={{ maxHeight: '40px' }}
+            />
             <span className="text-2xl font-serif font-bold text-slate-800 group-hover:text-blue-600 transition-colors duration-300">
-              Swell
+              Swell PR & Communications
             </span>
           </Link>
 

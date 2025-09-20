@@ -30,7 +30,7 @@ const TermsConditions = () => {
     {
       icon: Gavel,
       title: '5. Governing Law',
-      content: 'These Terms and Conditions are governed by and construed in accordance with the laws of the State of New York, without regard to its conflict of law principles. Any legal action or proceeding arising under these terms will be brought exclusively in the federal or state courts located in New York, NY.'
+      content: 'These Terms and Conditions are governed by and construed in accordance with the laws of the State of New York, without regard to its conflict of law principles. Any legal action or proceeding arising under these terms will be brought exclusively in the federal or state courts located in Limpopo, LP.'
     },
     {
       icon: FileText,
@@ -123,11 +123,11 @@ const TermsConditions = () => {
               <div className="flex flex-col md:flex-row justify-center items-center gap-8">
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-blue-600" />
-                  <span>Email: legal@swellpr.com</span>
+                  <span>Email: legal@swellprcomm.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-blue-600" />
-                  <span>Phone: +1 (555) 123-4567</span>
+                  <span>Phone: +27 (67) 964-7881</span>
                 </div>
               </div>
             </motion.div>

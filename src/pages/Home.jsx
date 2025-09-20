@@ -1,4 +1,5 @@
 import React from 'react';
+import heroImage from '../../assets/hero-image.jpeg.jpg';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -121,17 +122,36 @@ const Home = () => {
           </motion.div>
         </div>
 
-        {/* Hero Image/Video Placeholder */}
+        {/* Hero Video */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.9 }}
+          className="absolute bottom-32 right-10 hidden lg:block"
+        >
+          <video
+            className="w-96 h-56 rounded-2xl object-cover shadow-2xl border-4 border-white/20 floating"
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster={heroImage}
+            src="https://media.storyblocks.com/video/352684198/preview.mp4"
+          />
+        </motion.div>
+
+        {/* Small Hero Image Circle below video */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, delay: 1.2 }}
           className="absolute bottom-10 right-10 hidden lg:block"
         >
-          <img 
-            className="w-64 h-64 rounded-full object-cover shadow-2xl border-4 border-white/20 floating"
-            alt="Ocean waves representing dynamic PR and communications"
-           src="https://images.unsplash.com/photo-1507298130624-48d82262b97f" />
+          <img
+            className="w-24 h-24 rounded-full object-cover shadow-2xl border-4 border-white/20 floating"
+            alt="Swell PR & Communications Hero Circle"
+            src={heroImage}
+          />
         </motion.div>
       </section>
 

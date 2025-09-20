@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../../assets/logo-transparent.png';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Waves, Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
@@ -67,8 +68,13 @@ const Footer = () => {
                 className="mb-6"
               >
                 <Link to="/" className="flex items-center space-x-2 group mb-4">
-                  <Waves className="h-8 w-8 text-white group-hover:text-orange-400 transition-colors duration-300" />
-                  <span className="text-2xl font-serif font-bold">Swell</span>
+                  <img
+                    src={logo}
+                    alt=""
+                    className="h-10 w-auto drop-shadow-lg"
+                    style={{ maxHeight: '40px' }}
+                  />
+                  <span className="text-2xl font-serif font-bold">Swell PR & Communications</span>
                 </Link>
                 <p className="text-blue-100 mb-6 leading-relaxed">
                   We help brave brands say the right thing — on purpose! Making waves in PR & Communications.
@@ -78,15 +84,15 @@ const Footer = () => {
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
                     <Mail className="h-4 w-4 text-orange-400" />
-                    <span className="text-blue-100">hello@swellpr.com</span>
+                    <span className="text-blue-100">hello@swellprcomm.com</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Phone className="h-4 w-4 text-orange-400" />
-                    <span className="text-blue-100">+1 (555) 123-4567</span>
+                    <span className="text-blue-100">+27 (67) 964-7881</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <MapPin className="h-4 w-4 text-orange-400" />
-                    <span className="text-blue-100">New York, NY</span>
+                    <span className="text-blue-100">Limpopo, LP</span>
                   </div>
                 </div>
               </motion.div>

@@ -96,7 +96,7 @@ const About = () => {
                 Who We Are
               </h2>
               <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                Founded in 2018, Swell PR & Communications emerged from a simple belief: that every brand has a unique story worth telling, and when told with purpose and precision, these stories have the power to create meaningful change.
+                Founded in 2024, Swell PR & Communications emerged from a simple belief: that every brand has a unique story worth telling, and when told with purpose and precision, these stories have the power to create meaningful change.
               </p>
               <p className="text-lg text-slate-600 mb-6 leading-relaxed">
                 We're not your typical PR agency. We're strategic partners who dive deep into understanding your brand's essence, your audience's needs, and the market dynamics that shape your industry.

@@ -256,7 +256,7 @@ const FAQ = () => {
             >
               <Phone className="h-8 w-8 mx-auto mb-4 text-orange-400" />
               <h3 className="text-lg font-semibold mb-2">Call Us</h3>
-              <p className="text-blue-100">+1 (555) 123-4567</p>
+              <p className="text-blue-100">+27 (67) 964-7881</p>
               <p className="text-blue-200 text-sm">Mon-Fri, 9am-6pm EST</p>
             </motion.div>
             
@@ -268,7 +268,7 @@ const FAQ = () => {
             >
               <Mail className="h-8 w-8 mx-auto mb-4 text-orange-400" />
               <h3 className="text-lg font-semibold mb-2">Email Us</h3>
-              <p className="text-blue-100">hello@swellpr.com</p>
+              <p className="text-blue-100">hello@swellprcomm.com</p>
               <p className="text-blue-200 text-sm">We respond within 24 hours</p>
             </motion.div>
             

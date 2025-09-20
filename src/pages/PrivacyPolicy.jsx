@@ -208,11 +208,11 @@ const PrivacyPolicy = () => {
                 <div className="mt-4 space-y-2">
                   <div className="flex items-center space-x-3">
                     <Mail className="h-5 w-5 text-blue-600" />
-                    <span>Email: privacy@swellpr.com</span>
+                    <span>Email: privacy@swellprcomm.com</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Phone className="h-5 w-5 text-blue-600" />
-                    <span>Phone: +1 (555) 123-4567</span>
+                    <span>Phone: +27 (67) 964-7881</span>
                   </div>
                 </div>
               </div>
