@@ -90,7 +90,7 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto leading-relaxed"
             >
-              Strategic PR and communications that create waves, build connections, and drive meaningful impact for forward-thinking brands.
+               Strategic messaging, voice, and communications campaigns for founders who believe clarity is power (and personality is not optional).
             </motion.p>
 
             <motion.div
