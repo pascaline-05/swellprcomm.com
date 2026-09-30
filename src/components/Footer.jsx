@@ -3,6 +3,7 @@ import logo from '../../assets/logo-transparent.png';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Waves, Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import MediumIcon from '../../assets/medium.svg';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -40,9 +41,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: 'https://facebook.com', label: 'Facebook' },
-    { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' }
+    { icon: Facebook, href: 'https://www.facebook.com/share/19JjXTBoQU/', label: 'Facebook' },
+    { icon: Instagram, href: 'https://www.instagram.com/swellprcomms?stkn=MWViZmZxcjRocjV4MA==', label: 'Instagram' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/company/swell-pr-communications/', label: 'LinkedIn' },
+    { icon: MediumIcon, href: 'https://medium.com/@swellprcomm', label: 'Medium' }
   ];
 
   return (
@@ -146,7 +148,11 @@ const Footer = () => {
                     className="p-2 bg-white/10 rounded-full hover:bg-orange-400 hover:scale-110 transition-all duration-300 group"
                     aria-label={social.label}
                   >
-                    <social.icon className="h-5 w-5 text-white group-hover:text-white" />
+                    {social.label === 'Medium' ? (
+                      <img src={MediumIcon} alt={social.label} className="h-5 w-5 text-white group-hover:text-white" />
+                    ) : (
+                      <social.icon className="h-5 w-5 text-white group-hover:text-white" />
+                    )}
                   </a>
                 ))}
               </div>

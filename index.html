@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Swell PR &amp; Communications — Stories that swell with meaning.</title>
 <meta name="description" content="Swell is a creative consultancy and communications studio for brands that want to matter — loudly, softly, artfully, truthfully.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#0a0a0f">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -254,7 +257,7 @@
   /* ---------- TESTIMONIALS ---------- */
   .testi-head{ text-align:center; max-width:640px; margin:0 auto 60px; }
   .testi-head h2{ font-size:clamp(30px,3.4vw,44px); }
-  .testi-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  .testi-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
   .testi-card{
     background:var(--bg-card); border:1px solid var(--line); border-radius:18px;
     padding:32px 28px; display:flex; flex-direction:column; gap:22px;
@@ -269,11 +272,12 @@
   }
   .testi-person .name{ font-weight:700; font-size:14px; }
   .testi-person .role{ font-size:12.5px; color:var(--muted-dim); }
-  .placeholder-tag{
-    display:inline-block; margin-top:40px; font-family:'JetBrains Mono',monospace;
-    font-size:11.5px; color:var(--muted-dim); text-align:center; width:100%;
-    letter-spacing:0.06em;
+  .testi-logo{
+    width:56px; height:56px; flex:none; border-radius:14px; background:#fff;
+    display:flex; align-items:center; justify-content:center; padding:7px;
+    box-shadow:0 8px 22px -14px rgba(0,0,0,0.9);
   }
+  .testi-logo img{ width:100%; height:100%; object-fit:contain; }
 
   /* ---------- INSIGHTS ---------- */
   .insights-head{ display:flex; justify-content:space-between; align-items:flex-end; gap:40px; margin-bottom:56px; flex-wrap:wrap; }
@@ -294,7 +298,15 @@
   .insight-tag{ font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.08em; color:var(--cyan); text-transform:uppercase; }
   .insight-body h4{ font-size:17px; line-height:1.35; }
   .insight-body p{ color:var(--muted); font-size:13.5px; line-height:1.6; }
-  .insight-meta{ margin-top:auto; padding-top:10px; font-size:12.5px; color:var(--muted-dim); display:flex; justify-content:space-between; }
+  .insight-meta{ margin-top:auto; padding-top:10px; font-size:12.5px; color:var(--muted-dim); display:flex; justify-content:space-between; gap:12px; }
+  .insights-head-2{ margin-top:104px; }
+  .insights-head-2 p{ color:var(--muted); font-size:16px; max-width:520px; line-height:1.6; margin-top:16px; }
+  .insights-grid-2{ grid-template-columns:repeat(2,1fr); }
+  .insight-link{ color:var(--text); transition:border-color .25s ease, transform .25s ease, box-shadow .25s ease; }
+  .insight-link:hover{ border-color:rgba(255,255,255,0.35); transform:translateY(-4px); box-shadow:0 24px 46px -34px rgba(0,0,0,0.95); }
+  .insight-link:hover h4{ color:var(--cyan); }
+  .insight-media img{ width:100%; height:100%; object-fit:cover; }
+  .insight-link .insight-body h4{ transition:color .25s ease; }
 
   /* ---------- CONNECT ---------- */
   .connect{ position:relative; overflow:hidden; }
@@ -524,28 +536,34 @@
       </div>
       <div class="testi-grid reveal">
         <div class="testi-card">
-          <p class="testi-quote">Swell understood our positioning faster than teams we'd worked with for years. The launch coverage spoke for itself.</p>
+          <p class="testi-quote">We don't tolerate noise. Swell gave us signal — positioning as precise as the architecture we ship.</p>
           <div class="testi-person">
-            <div class="testi-avatar">A</div>
-            <div><div class="name">Founder</div><div class="role">Fintech startup</div></div>
+            <div class="testi-logo"><img src="assets/client-sans-mercantile.png" alt="Sans Mercantile logo" loading="lazy"></div>
+            <div><div class="name">Sans Mercantile</div><div class="role">AI-Driven Global Trade &amp; Predictive Analytics</div></div>
           </div>
         </div>
         <div class="testi-card">
-          <p class="testi-quote">They don't just write press releases — they think in narratives. That shift changed how our whole team talks about the product.</p>
+          <p class="testi-quote">They turned institutional-grade complexity into a narrative the market could actually parse. Rigorous, lean, no fluff.</p>
           <div class="testi-person">
-            <div class="testi-avatar">M</div>
-            <div><div class="name">Marketing Director</div><div class="role">Consumer brand</div></div>
+            <div class="testi-logo"><img src="assets/client-priv.png" alt="Priv logo" loading="lazy"></div>
+            <div><div class="name">Priv</div><div class="role">Wealth Intelligence &amp; Market Dynamics</div></div>
           </div>
         </div>
         <div class="testi-card">
-          <p class="testi-quote">Calm, sharp, and fast when it counted. Swell handled a sensitive moment for us with more composure than we had.</p>
+          <p class="testi-quote">Swell understood the mission before we closed the brief. The story carries the same precision as the science.</p>
           <div class="testi-person">
-            <div class="testi-avatar">T</div>
-            <div><div class="name">CEO</div><div class="role">Scale-up</div></div>
+            <div class="testi-logo"><img src="assets/client-omega.png" alt="Omega logo" loading="lazy"></div>
+            <div><div class="name">Omega</div><div class="role">Medical AI &amp; Consciousness Ecosystem</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <p class="testi-quote">In 195 jurisdictions, clarity is compliance. Swell built us a voice as rigorous as the frameworks we monitor.</p>
+          <div class="testi-person">
+            <div class="testi-logo"><img src="assets/client-brigit.png" alt="Brigit logo" loading="lazy"></div>
+            <div><div class="name">Brigit</div><div class="role">Legal &amp; Regulatory Intelligence</div></div>
           </div>
         </div>
       </div>
-      <div class="placeholder-tag">Placeholder testimonials — swap in real client quotes</div>
     </div>
   </section>
 
@@ -585,6 +603,53 @@
           </div>
         </div>
       </div>
+
+      <div class="insights-head insights-head-2 reveal">
+        <div>
+          <div class="eyebrow">Reposted from Medium</div>
+          <h2>Four pieces worth your time</h2>
+          <p>Written by us, published on Medium — read the full essays over there.</p>
+        </div>
+        <a class="btn btn-ghost" href="https://medium.com/@swellprcomm" target="_blank" rel="noopener noreferrer">Follow on Medium</a>
+      </div>
+      <div class="insights-grid insights-grid-2 reveal">
+        <a class="insight-card insight-link" href="https://medium.com/@swellprcomm/executive-profiling-isnt-vanity-it-s-strategy-6d62e150d7c6" target="_blank" rel="noopener noreferrer">
+          <div class="insight-media"><img src="assets/medium-article-1.jpg" alt="Executive Profiling Is Not Vanity It Is Strategy" loading="lazy"></div>
+          <div class="insight-body">
+            <span class="insight-tag">Medium · Sep 8, 2025</span>
+            <h4>Executive Profiling Isn't Vanity — It's Strategy</h4>
+            <p>Your founder isn't just building a product, they're shaping a movement. Your CEO isn't just leading a team, they're defining your industry.</p>
+            <div class="insight-meta"><span>Swell PR &amp; Communications</span><span>Read on Medium →</span></div>
+          </div>
+        </a>
+        <a class="insight-card insight-link" href="https://medium.com/@swellprcomm/less-noise-more-meaning-the-case-for-strategic-silence-afd21c157366" target="_blank" rel="noopener noreferrer">
+          <div class="insight-media"><img src="assets/medium-article-2.jpg" alt="Less Noise, More Meaning: The Case for Strategic Silence" loading="lazy"></div>
+          <div class="insight-body">
+            <span class="insight-tag">Medium · Aug 20, 2025</span>
+            <h4>Less Noise, More Meaning: The Case for Strategic Silence</h4>
+            <p>The age of overcommunication — why knowing when to say nothing is the sharpest communications strategy left.</p>
+            <div class="insight-meta"><span>Swell PR &amp; Communications</span><span>Read on Medium →</span></div>
+          </div>
+        </a>
+        <a class="insight-card insight-link" href="https://medium.com/@swellprcomm/what-journalists-really-want-the-anatomy-of-a-great-media-pitch-b751682a6f64" target="_blank" rel="noopener noreferrer">
+          <div class="insight-media"><img src="assets/medium-article-3.jpg" alt="What Journalists Really Want: The Anatomy of a Great Media Pitch" loading="lazy"></div>
+          <div class="insight-body">
+            <span class="insight-tag">Medium · Jun 29, 2025</span>
+            <h4>What Journalists Really Want: The Anatomy of a Great Media Pitch</h4>
+            <p>Relevant, timely and useful pitches land coverage — here is what journalists actually want, and how to hand it to them.</p>
+            <div class="insight-meta"><span>Swell PR &amp; Communications</span><span>Read on Medium →</span></div>
+          </div>
+        </a>
+        <a class="insight-card insight-link" href="https://medium.com/@swellprcomm/the-power-of-strategic-storytelling-how-founders-can-shape-public-perception-8c186e9a564c" target="_blank" rel="noopener noreferrer">
+          <div class="insight-media"><img src="assets/medium-article-4.jpg" alt="The Power of Strategic Storytelling" loading="lazy"></div>
+          <div class="insight-body">
+            <span class="insight-tag">Medium · Jun 21, 2025</span>
+            <h4>The Power of Strategic Storytelling: How Founders Can Shape Public Perception</h4>
+            <p>In a world saturated with content it isn't the loudest voice that wins — it's the most resonant story.</p>
+            <div class="insight-meta"><span>Swell PR &amp; Communications</span><span>Read on Medium →</span></div>
+          </div>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -614,9 +679,10 @@
           <div>
             <div class="label" style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.08em; color:var(--muted-dim); text-transform:uppercase; margin-bottom:10px;">Follow along</div>
             <div class="social-row">
-              <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4v1.5A5 5 0 0 1 16 8Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-              <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
-              <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+              <a href="https://www.facebook.com/share/19JjXTBoQU/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+              <a href="https://www.instagram.com/swellprcomms?stkn=MWViZmZxcjRocjV4MA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+              <a href="https://www.linkedin.com/company/swell-pr-communications/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4v1.5A5 5 0 0 1 16 8Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+              <a href="https://medium.com/@swellprcomm" target="_blank" rel="noopener noreferrer" aria-label="Medium"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="6.9" cy="12" rx="6.9" ry="7.4" fill="currentColor" stroke="none"/><ellipse cx="16.4" cy="12" rx="3.1" ry="7" fill="currentColor" stroke="none"/><ellipse cx="21.5" cy="12" rx="1.4" ry="6.4" fill="currentColor" stroke="none"/></svg></a>
             </div>
           </div>
         </div>
