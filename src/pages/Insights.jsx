@@ -4,6 +4,10 @@ import { motion } from 'framer-motion';
 import { Download, FileText, BarChart, Lightbulb, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { toast } from '@/components/ui/use-toast';
+import medium1 from '../../assets/medium-article-1.jpg';
+import medium2 from '../../assets/medium-article-2.jpg';
+import medium3 from '../../assets/medium-article-3.jpg';
+import medium4 from '../../assets/medium-article-4.jpg';
 
 const Insights = () => {
   const resources = [
@@ -48,6 +52,37 @@ const Insights = () => {
       description: 'A recording of our recent webinar exploring how artificial intelligence is transforming the PR industry.',
       type: 'Webinar',
       color: 'from-red-500 to-red-600'
+    }
+  ];
+
+  const mediumArticles = [
+    {
+      title: "Executive Profiling Isn't Vanity — It's Strategy",
+      description: "Your founder isn't just building a product, they're shaping a movement. Your CEO isn't just leading a team, they're defining your industry.",
+      url: "https://medium.com/@swellprcomm/executive-profiling-isnt-vanity-it-s-strategy-6d62e150d7c6",
+      image: medium1,
+      date: "Sep 8, 2025"
+    },
+    {
+      title: "Less Noise, More Meaning: The Case for Strategic Silence",
+      description: "The age of overcommunication — why knowing when to say nothing is the sharpest communications strategy left.",
+      url: "https://medium.com/@swellprcomm/less-noise-more-meaning-the-case-for-strategic-silence-afd21c157366",
+      image: medium2,
+      date: "Aug 20, 2025"
+    },
+    {
+      title: "What Journalists Really Want: The Anatomy of a Great Media Pitch",
+      description: "Relevant, timely and useful pitches land coverage — here is what journalists actually want, and how to hand it to them.",
+      url: "https://medium.com/@swellprcomm/what-journalists-really-want-the-anatomy-of-a-great-media-pitch-b751682a6f64",
+      image: medium3,
+      date: "Jun 29, 2025"
+    },
+    {
+      title: "The Power of Strategic Storytelling: How Founders Can Shape Public Perception",
+      description: "In a world saturated with content it isn't the loudest voice that wins — it's the most resonant story.",
+      url: "https://medium.com/@swellprcomm/the-power-of-strategic-storytelling-how-founders-can-shape-public-perception-8c186e9a564c",
+      image: medium4,
+      date: "Jun 21, 2025"
     }
   ];
 
@@ -140,6 +175,74 @@ const Insights = () => {
                   </Button>
                 </div>
               </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Medium Articles */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16"
+          >
+            <div>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-800 mb-4">
+                From Our Medium
+              </h2>
+              <p className="text-xl text-slate-600 max-w-2xl">
+                Four pieces worth your time — published on Medium, read in full there.
+              </p>
+            </div>
+            <Button 
+              asChild
+              variant="outline"
+              className="gradient-ocean text-white hover:shadow-lg hover:scale-105 transition-all duration-300 whitespace-nowrap"
+            >
+              <a href="https://medium.com/@swellprcomm" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
+                <span>Follow on Medium</span>
+                <ArrowRight className="h-5 w-5" />
+              </a>
+            </Button>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {mediumArticles.map((article, index) => (
+              <motion.a
+                key={article.title}
+                href={article.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-100 overflow-hidden flex flex-col"
+              >
+                <img
+                  src={article.image}
+                  alt={article.title}
+                  className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="p-6 flex-grow flex flex-col">
+                  <span className="px-3 py-1 text-sm font-medium rounded-full bg-slate-100 text-slate-700 mb-4 inline-block">
+                    Medium · {article.date}
+                  </span>
+                  <h3 className="text-lg font-bold text-slate-800 mb-3 flex-grow group-hover:text-blue-600 transition-colors">
+                    {article.title}
+                  </h3>
+                  <p className="text-slate-600 mb-6 leading-relaxed flex-grow">
+                    {article.description}
+                  </p>
+                  <div className="flex items-center justify-between text-sm text-slate-500">
+                    <span>Swell PR & Communications</span>
+                    <span className="group-hover:text-blue-600 transition-colors">Read on Medium →</span>
+                  </div>
+                </div>
+              </motion.a>
             ))}
           </div>
         </div>

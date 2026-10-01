@@ -5,6 +5,10 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Zap, Target, Users, TrendingUp, Star, Quote } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import sansLogo from '../../assets/client-sans-mercantile.png';
+import privLogo from '../../assets/client-priv.png';
+import omegaLogo from '../../assets/client-omega.png';
+import brigitLogo from '../../assets/client-brigit.png';
 
 const Home = () => {
   const services = [
@@ -32,21 +36,31 @@ const Home = () => {
 
   const testimonials = [
     {
-      quote: "Swell transformed our brand narrative and helped us connect with our audience in ways we never imagined.",
-      author: "Sarah Johnson",
-      role: "CEO, TechFlow",
+      quote: "We don't tolerate noise. Swell gave us signal — positioning as precise as the architecture we ship.",
+      author: "Sans Mercantile",
+      role: "AI-Driven Global Trade & Predictive Analytics",
+      logo: sansLogo,
       rating: 5
     },
     {
-      quote: "Their strategic approach to PR delivered results beyond our expectations. Truly exceptional work.",
-      author: "Michael Chen",
-      role: "Founder, GreenSpace",
+      quote: "They turned institutional-grade complexity into a narrative the market could actually parse. Rigorous, lean, no fluff.",
+      author: "Priv",
+      role: "Wealth Intelligence & Market Dynamics",
+      logo: privLogo,
       rating: 5
     },
     {
-      quote: "Working with Swell was a game-changer. They understand how to make brands stand out.",
-      author: "Emily Rodriguez",
-      role: "CMO, InnovateLab",
+      quote: "Swell understood the mission before we closed the brief. The story carries the same precision as the science.",
+      author: "Omega",
+      role: "Medical AI & Consciousness Ecosystem",
+      logo: omegaLogo,
+      rating: 5
+    },
+    {
+      quote: "In 195 jurisdictions, clarity is compliance. Swell built us a voice as rigorous as the frameworks we monitor.",
+      author: "Brigit",
+      role: "Legal & Regulatory Intelligence",
+      logo: brigitLogo,
       rating: 5
     }
   ];
@@ -230,7 +244,7 @@ const Home = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
               <motion.div
                 key={index}
@@ -252,9 +266,18 @@ const Home = () => {
                   "{testimonial.quote}"
                 </p>
                 
-                <div className="border-t pt-4">
-                  <p className="font-semibold text-slate-800">{testimonial.author}</p>
-                  <p className="text-slate-600 text-sm">{testimonial.role}</p>
+                <div className="border-t pt-4 flex items-center gap-4">
+                  <div className="w-14 h-14 rounded-xl bg-white/80 p-2 flex items-center justify-center shadow-sm">
+                    <img 
+                      src={testimonial.logo} 
+                      alt={`${testimonial.author} logo`} 
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-slate-800">{testimonial.author}</p>
+                    <p className="text-slate-600 text-sm">{testimonial.role}</p>
+                  </div>
                 </div>
               </motion.div>
             ))}
